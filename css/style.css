@@ -1,0 +1,658 @@
+/* main settings start*/
+body {
+  background: #c4c4c4;
+  width: 1440px;
+  height: 3295px;
+}
+
+.wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.wrapper > header,
+.content > div {
+  margin-bottom: 70px;
+}
+
+.clr {
+  clear: both;
+}
+
+.button-style {
+  font: 300 normal 12px/12px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 100px;
+  height: 25px;
+  display: block;
+  color: #555555;
+  border: 1px solid #555555;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-left: 9px;
+}
+/* main settings end*/
+
+/*header start*/
+
+.header {
+  height: 120px;
+  margin-top: 80px;
+  background: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo {
+  padding: 42px 272px 42px 100px;
+  float: left;
+}
+
+.header__logo-link {
+  display: block;
+  background: url("../img/logo_1.png") center no-repeat;
+  width: 87px;
+  height: 36px;
+}
+
+.header__menu {
+  float: right;
+  padding: 52px 100px 52px 0px;
+}
+
+.header__menu-list {
+  width: 561px;
+  height: 16px;
+}
+
+.header__menu {
+  position: relative;
+}
+
+.header__menu ul li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.header__menu-item-link {
+  font: 300 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: right;
+  color: #555555;
+  text-transform: uppercase;
+}
+
+.header__menu-item-link:hover {
+  text-decoration: underline;
+}
+
+.header__menu-item-link:focus {
+  background: red;
+}
+
+.header__menu-list li:nth-child(2):hover .header__submenu,
+.header__menu-list li:nth-child(2):hover .header__submenu-item-link {
+  display: block;
+}
+
+.header__submenu {
+  position: absolute;
+  display: none;
+  top: 66px;
+  width: 70px;
+  background: white;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.5);
+}
+
+.header__submenu-item-link {
+  display: none;
+  font: 300 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: center;
+  color: #555555;
+  text-transform: uppercase;
+  margin-top: 7px !important;
+  white-space: nowrap;
+  padding-left: 5px;
+}
+
+.header__submenu-item-link:hover {
+  transform: scale(1.1);
+  background: #c4c4c4;
+}
+
+/*header end*/
+
+/*content start*/
+
+.content {
+  height: 2915px;
+}
+
+/*content hero start*/
+
+.hero {
+  background: url(../img/HeroPage_1.png) center no-repeat white;
+  height: 438px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__image {
+  width: 252px;
+  height: 105px;
+  margin: 50px 0px 29px 77px;
+}
+
+.hero__title {
+  font: 400 normal 24px/32px "Playfair Display", serif;
+  letter-spacing: 0.0025em;
+  text-align: center;
+  width: 341px;
+  height: 32px;
+  color: #911026;
+  text-transform: capitalize;
+  margin: 0px 0px 26px 77px;
+}
+
+.hero__text {
+  font: 400 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 354px;
+  height: 96px;
+  color: #555555;
+  margin: 0px 0px 30px 77px;
+}
+
+.hero__button {
+  margin: 0 0 0 77px;
+}
+
+.hero__button:hover {
+  background-color: gray;
+}
+
+/*content hero end*/
+
+/*recipies start */
+
+.recipes {
+  background: white;
+  height: 370px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.recipe__column {
+  width: 313px;
+  height: 269px;
+  float: left;
+  margin-right: 35px;
+  margin-top: 40px;
+}
+
+.recipe__column:nth-child(1) {
+  margin-left: 55px;
+}
+
+.recipe__column:nth-child(3) {
+  margin-right: 55px !important;
+}
+
+.recipe__column-image {
+  width: 100%;
+  height: 208px;
+}
+
+.recipe__column-title {
+  font: 300 normal 18px/18px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 295px;
+  color: #000000;
+  margin-top: 18px;
+  margin-bottom: 9px;
+}
+
+.recipe__column-time {
+  font: 300 normal 12px/16px "Open Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 70px;
+  height: 16px;
+  color: #555555;
+}
+
+.recipe__column-time::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: url(../img/clock-icon_4.png) center no-repeat;
+}
+
+/*recipies end */
+
+/* detailed_recipe start*/
+
+.detailed_recipe {
+  background: white;
+  height: 438px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.detailed_recipe__left {
+  float: left;
+  margin-right: 35px;
+}
+
+.detailed_recipe__image-left {
+  width: 518px;
+  height: 438px;
+}
+
+.detailed_recipe__right {
+  float: left;
+  width: 497px;
+  height: 420px;
+  margin-right: 68px;
+}
+
+.detailed_recipe__title {
+  font: 700 normal 32px/43px "Playfair Display", serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  height: 32px;
+  color: #055555;
+  text-transform: capitalize;
+  margin-bottom: 37px;
+  margin-top: 30px;
+}
+
+.detailed_recipe__info {
+  margin-bottom: 43px;
+}
+
+.detailed_recipe__info-time {
+  font: 400 normal 16px/22px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 70px;
+  height: 16px;
+  color: #555555;
+  margin-right: 8px;
+}
+
+.detailed_recipe__info-time::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 11px;
+  height: 12px;
+  background: url(../img/clock-icon_4.png) center no-repeat;
+}
+
+.detailed_recipe__info-complexity {
+  font: 400 normal 18px/18px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 39px;
+  height: 18px;
+  color: #555555;
+  margin-right: 170px;
+}
+
+.detailed_recipe__info-complexity::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 34px;
+  height: 24px;
+  background: url(../img/progress-icon_1.png) center no-repeat;
+}
+
+.detailed_recipe__info-button {
+  margin-right: 20px;
+  float: right;
+}
+
+.detailed_recipe__info-button:hover {
+  background: gray;
+}
+
+.detailed_recipe-text {
+  font: 300 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: -0.03em;
+  text-align: left;
+  overflow-x: scroll;
+  width: 497px;
+  height: 280px;
+  padding-bottom: 100px;
+}
+
+.detailed_recipe-text-caption {
+  margin-bottom: 15px;
+}
+
+.detailed_recipe-text-title {
+  font: 600 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+/* detailed_recipe end*/
+
+/* author start*/
+.author {
+  height: 488px;
+}
+
+.author__element {
+  width: 518px;
+  height: 488px;
+  background: white;
+  float: left;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.author__element:first-child {
+  margin-right: 83px;
+}
+
+.author__element:first-child {
+  margin-right: 83px;
+}
+
+.author__element-title {
+  font: 400 italic 20px/20px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 62px;
+  height: 20px;
+  color: #000000;
+  margin: 20px 0px 33px 45px;
+}
+
+.author__element-title::after {
+  content: "";
+  display: block;
+  width: 443px;
+  height: 2px;
+  background: #dddddd;
+  margin-top: 8px;
+  margin-left: -13px;
+}
+
+.author__element-info {
+  width: 439px;
+  height: 128px;
+  margin: 0px 47px 10px 32px;
+}
+
+.author__element-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.author__element-name {
+  font: 700 normal 20px/20px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  color: #000000;
+  margin: 0px 0px 20px 7px;
+}
+
+.author__element-country {
+  font: 300 normal 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.author__element-contact::after {
+  content: "";
+  width: 291px;
+  height: 2px;
+  background: #dddddd;
+  display: block;
+  margin-left: 148px;
+}
+
+.author__element-contact-item {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.author__contact-item-link {
+  width: 26px;
+  height: 15px;
+  display: block;
+  margin-right: 8px;
+}
+
+.author__element-contact li:nth-child(1) {
+  background: url(../img/google-icon_1.png) center no-repeat;
+}
+
+.author__element-contact li:nth-child(2) {
+  background: url(../img/twitter-icon_1.png) center no-repeat;
+}
+
+.author__element-contact li:nth-child(3) {
+  background: url(../img/fb-icon_1.png) center no-repeat;
+}
+
+.author__element-contact li:hover {
+  transform: scale(1.4);
+}
+
+.author__element-article-title {
+  font: 300 italic 20px/20px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 123px;
+  height: 20px;
+  font-size: 20px;
+  color: #000000;
+  margin: 0px 0px 28px 180px;
+}
+
+.author__element-article-text {
+  font: 300 italic 14px/14px "Josefin Sans", sans-serif;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 302px;
+  height: 105px;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 180px;
+}
+
+/* author end*/
+
+/*SideBar start*/
+
+.sidebar {
+  width: 1000px;
+  height: 758px;
+  margin-left: 60px;
+}
+
+.Sidebar__element {
+  float: left;
+  width: 290px;
+  height: 349px;
+  background: url(../img/side-bar-fon_1.png) center no-repeat;
+  margin-right: 65px;
+  margin-bottom: 60px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Sidebar__element:nth-child(3) {
+  margin-right: 0px;
+}
+
+.Sidebar__element:nth-child(6) {
+  margin-right: 0px;
+}
+
+.Sidebar__element-title {
+  font: 900 normal 32px/43px "Playfair Display", serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 196px;
+  height: 32px;
+  color: #921026;
+  font-size: 32px;
+  margin: 28px 76px 40px 18px;
+}
+
+.Sidebar__element-subtitle {
+  font: 700 normal 22px/22px "Josefin Sans", sans-serif;
+  text-align: left;
+  width: 228px;
+  height: 22px;
+  color: #000000;
+  margin: 0px 44px 17px 18px;
+}
+
+.Sidebar__element-text {
+  font: 300 italic 16px/16px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  width: 250px;
+  height: 48px;
+  font-size: 16px;
+  color: #000000;
+  margin: 0px 22px 16px 18px;
+}
+
+.Sidebar__element-button {
+  margin: 0px 167px 118px 18px;
+}
+
+.Sidebar__element-button:hover {
+  background: gray;
+}
+/*SideBar end*/
+
+/*content end*/
+
+/*footer start */
+
+.footer {
+  height: 180px;
+  background: #2f2f2f;
+}
+
+.footer__logo {
+  float: left;
+  padding: 72px 118px 72px 85px;
+}
+
+.footer__logo-link {
+  display: block;
+  width: 87px;
+  height: 36px;
+  background: url(../img/logo-white_1.png);
+}
+
+.footer__navigation {
+  padding: 84px 45px 84px 0px;
+  width: 500px;
+  height: 12px;
+  float: left;
+}
+
+.footer__navigation-item {
+  display: inline-block;
+}
+
+.footer__navigation-item-link {
+  font: 300 normal 12px/12px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.footer__navigation-item-link:hover {
+  text-decoration: underline;
+}
+
+.footer__contact-info {
+  float: left;
+  padding-top: 84px;
+  padding-left: 20px;
+}
+
+.footer__copyright {
+  font: 300 normal 12px/12px "Josefin Sans", sans-serif;
+  letter-spacing: 0.0025em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fefefe;
+}
+
+.footer__copyright::before {
+  content: "";
+  width: 12px;
+  height: 11px;
+  background: url(../img/copyring_1.png) center no-repeat;
+  margin-right: 5px;
+  float: left;
+  clear: both;
+}
+
+.footer__contact-info-list li {
+  display: inline-block;
+  margin-top: 12px;
+  padding-right: 8px;
+}
+
+.footer__contact-info-list li:nth-child(1) a {
+  margin-left: 155px;
+  width: 25px;
+  height: 15px;
+  background: url(../img/google-icon_1.png) center no-repeat;
+  float: right;
+}
+
+.footer__contact-info-list li:nth-child(2) a {
+  width: 25px;
+  height: 15px;
+  background: url(../img/twitter-icon_1.png) center no-repeat;
+  float: right;
+}
+
+.footer__contact-info-list li:nth-child(3) a {
+  width: 25px;
+  height: 15px;
+  background: url(../img/fb-icon_1.png) center no-repeat;
+  float: right;
+}
+
+.footer__contact-info-list li a:hover {
+  transform: scale(1.4);
+}
+
+.arrow {
+  position: absolute;
+  top: 3295px;
+  right: 0;
+}
+
+.arrow__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../svg/up-arrow.svg);
+}
+/*footer end*/
